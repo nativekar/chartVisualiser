@@ -13,23 +13,23 @@ import { exportToPPT } from "../Helpers/exportToPPT";
 const data = [
   {
     name: "Apple",
-    value: 10,
+    apple: 10,
   },
   {
     name: "Orange",
-    value: 15,
+    orange: 15,
   },
   {
     name: "Banana",
-    value: 25,
+    banana: 25,
   },
   {
     name: "Grape",
-    value: 30,
+    grape: 30,
   },
   {
     name: "Mango",
-    value: 28,
+    mango: 28,
   },
 ];
 const slideHeaderForPPT = "Vertical Bar Chart";
