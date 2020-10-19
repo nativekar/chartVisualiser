@@ -2,9 +2,9 @@ import React from "react";
 import "./App.css";
 import Navbar from "./Components/Navbar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import ChartSelector from "./Pages/ChartSelector";
-import VerticalBarChart from "./Pages/VerticalBarChart";
-import DonutChart from "./Pages/DonutChart";
+import ChartSelector from "./Charts/ChartSelector";
+import VerticalBarChart from "./Charts/VerticalBarChart";
+import DonutChart from "./Charts/DonutChart";
 
 function App() {
   return (
