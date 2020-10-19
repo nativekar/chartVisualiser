@@ -3,7 +3,7 @@ Forrester Research SDE test.
 
 ## How to run
 
-Clone the git repository
+Clone the git repository, then:
 
 ### `npm install`
 
