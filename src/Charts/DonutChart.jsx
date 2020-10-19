@@ -48,7 +48,7 @@ export default class DonutChart extends PureComponent {
           </button>
         </div>
         <AreaChart
-          width={500}
+          width={750}
           height={400}
           data={data}
           margin={{
