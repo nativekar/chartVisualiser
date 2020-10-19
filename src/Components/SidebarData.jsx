@@ -11,7 +11,7 @@ export const SidebarData = [
   },
   {
     title: "Vertical Bar Chart",
-    path: "/vertical-chart",
+    path: "/vertical-bar-chart",
     icon: <IoIcons.IoIosPaper />,
     className: "nav-text",
   },

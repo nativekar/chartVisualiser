@@ -11,11 +11,14 @@ function Navbar() {
 
   const showSidebar = () => setSidebar(!sidebar);
   return (
-    <>
+    <React.Fragment>
       <IconContext.Provider value={{ color: "#fff" }}>
         <div className="navbar">
           <Link to="#">
-            <FaIcons.FaBars onClick={showSidebar} />
+            <FaIcons.FaBars
+              style={{ marginLeft: "12px" }}
+              onClick={showSidebar}
+            />
           </Link>
         </div>
         <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
@@ -38,7 +41,7 @@ function Navbar() {
           </ul>
         </nav>
       </IconContext.Provider>
-    </>
+    </React.Fragment>
   );
 }
 

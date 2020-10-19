@@ -13,7 +13,7 @@ function App() {
         <Navbar />
         <Switch>
           <Route path="/" exact component={ChartSelector} />
-          <Route path="/vertical-chart" component={VerticalBarChart} />
+          <Route path="/vertical-bar-chart" component={VerticalBarChart} />
           <Route path="/donut-chart" component={DonutChart} />
         </Switch>
       </Router>
