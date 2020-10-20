@@ -43,6 +43,7 @@ export default class DonutChart extends PureComponent {
   render() {
     return (
       <div className="donut-chart">
+        <h3> Donut Chart</h3>
         <div className="export-button">
           <button type="button" className="button" onClick={handleExport}>
             Export PPT

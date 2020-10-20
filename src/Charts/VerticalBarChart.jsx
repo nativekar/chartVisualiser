@@ -44,6 +44,7 @@ export default class VerticalBarChart extends PureComponent {
   render() {
     return (
       <div className="vertical-bar-chart">
+        <h3> Vertical Bar Chart</h3>
         <div className="export-button">
           <button type="button" className="button" onClick={handleExport}>
             Export PPT
