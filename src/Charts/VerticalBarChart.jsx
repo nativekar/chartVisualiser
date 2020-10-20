@@ -32,12 +32,22 @@ const data = [
     mango: 28,
   },
 ];
-const slideHeaderForPPT = "Vertical Bar Chart";
+
+const dataForChart = [
+  {
+    name: "Bar A",
+    labels: ["Apple", "Orange", "Banana", "Grape", "Mango"], // items for x axis labels
+    values: [10, 15, 25, 30, 28], // values for the plot
+    options: { valueBarColors: true },
+  },
+];
+
+const chartType = "Bar";
 
 const fileNameForPPT = "Vertical Bar Chart.pptx";
 
 const handleExport = () => {
-  exportToPPT(slideHeaderForPPT, data, fileNameForPPT);
+  exportToPPT(fileNameForPPT, dataForChart, chartType);
 };
 
 export default class VerticalBarChart extends PureComponent {

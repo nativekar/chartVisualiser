@@ -31,12 +31,21 @@ const data = [
     value: 28,
   },
 ];
-const slideHeaderForPPT = "Donut Chart";
+
+const dataForChart = [
+  {
+    name: "Actual Sales",
+    labels: ["Apple", "Orange", "Banana", "Grape", "Mango"],
+    values: [10, 15, 25, 30, 28],
+  },
+];
+
+const chartType = "Line";
 
 const fileNameForPPT = "Donut Chart.pptx";
 
 const handleExport = () => {
-  exportToPPT(slideHeaderForPPT, data, fileNameForPPT);
+  exportToPPT(fileNameForPPT, dataForChart, chartType);
 };
 
 export default class DonutChart extends PureComponent {
