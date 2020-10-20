@@ -32,18 +32,19 @@ const data = [
   },
 ];
 const slideHeaderForPPT = "Donut Chart";
+
 const fileNameForPPT = "Donut Chart.pptx";
+
+const handleExport = () => {
+  exportToPPT(slideHeaderForPPT, data, fileNameForPPT);
+};
 
 export default class DonutChart extends PureComponent {
   render() {
     return (
       <div className="donut-chart">
         <div className="export-button">
-          <button
-            type="button"
-            className="button"
-            onClick={exportToPPT(slideHeaderForPPT, data, fileNameForPPT)}
-          >
+          <button type="button" className="button" onClick={handleExport}>
             Export PPT
           </button>
         </div>

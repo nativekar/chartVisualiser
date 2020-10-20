@@ -33,18 +33,19 @@ const data = [
   },
 ];
 const slideHeaderForPPT = "Vertical Bar Chart";
+
 const fileNameForPPT = "Vertical Bar Chart.pptx";
+
+const handleExport = () => {
+  exportToPPT(slideHeaderForPPT, data, fileNameForPPT);
+};
 
 export default class VerticalBarChart extends PureComponent {
   render() {
     return (
       <div className="vertical-bar-chart">
         <div className="export-button">
-          <button
-            type="button"
-            className="button"
-            onClick={exportToPPT(slideHeaderForPPT, data, fileNameForPPT)}
-          >
+          <button type="button" className="button" onClick={handleExport}>
             Export PPT
           </button>
         </div>
